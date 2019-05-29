@@ -26,7 +26,7 @@ function checkCookie() {
   var locked_section = document.getElementById('remove');
   if (user != "") {
     alert("Welcome again " + user);
-    locked_section.removeClass('locked');
+    locked_section.classList.remove("locked");
   } else {
     locked_section.style.display = "block";
      user = prompt("Please enter your name:","");
