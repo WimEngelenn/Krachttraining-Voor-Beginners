@@ -409,8 +409,10 @@ Pagina voedingsmiddelen
 .voeding_extra .content-inner {
   padding: 5px 0 0; }
 
-.voeding_extra .collapse p {
+.voeding_extra .collapse .collapse-content {
   padding: 20px; }
+  .voeding_extra .collapse .collapse-content p {
+    padding-bottom: 20px; }
 
 .collapse li {
   padding: 5px 0; }
