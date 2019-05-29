@@ -25,7 +25,6 @@ function checkCookie() {
   var user=getCookie("username");
   var locked_section = document.getElementById('remove');
   if (user != "") {
-    alert("Welcome again " + user);
     locked_section.classList.remove("locked");
   } else {
     locked_section.style.display = "block";
