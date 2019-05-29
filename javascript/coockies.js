@@ -23,12 +23,14 @@ function getCookie(cname) {
 
 function checkCookie() {
   var user=getCookie("username");
+  var locked_section = document.getElementById('remove');
   if (user != "") {
     alert("Welcome again " + user);
+    locked_section.style.display = "none";
   } else {
-     user = prompt("Please enter your name:","");
-     if (user != "" && user != null) {
-       setCookie("username", user, 30);
+    locked_section.style.display = "block";
+     // user = prompt("Please enter your name:","");
+     // if (user != "" && user != null) {
+     //   setCookie("username", user, 30);
      }
   }
-}
