@@ -440,15 +440,14 @@ Pagina voedingsmiddelen
       bottom: 0;
       right: 0;
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.2);
       background-size: cover;
       z-index: -1; }
   .collapse li .collapse-content {
     display: none;
-    overflow: hidden;
-    margin-bottom: 20px; }
+    overflow: hidden; }
     .collapse li .collapse-content ul {
-      padding: 20px; }
+      padding: 50px; }
       .collapse li .collapse-content ul li {
         display: -webkit-box;
         display: -ms-flexbox;

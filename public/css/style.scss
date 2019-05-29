@@ -514,7 +514,7 @@ Pagina voedingsmiddelen
         bottom: 0;
         right: 0;
         position: absolute;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.2);
         background-size: cover;
         z-index: -1;
       }
@@ -523,10 +523,10 @@ Pagina voedingsmiddelen
     .collapse-content {
       display: none;
       overflow: hidden;
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
 
       ul {
-        padding: 20px;
+        padding: 50px;
         // border: 1px solid lightgray;
         li {
           display: flex;
