@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+  <title>Krachttraining voor beginners - Voeding</title>
+
+  <!--Importeren stylesheets -->
+
+  <link rel="stylesheet" type="text/css" href="../public/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+
+  <!--Importeren fonts -->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="voeding">
+
+  <header id="header-groen">
+    <a style="visibility: hidden;" href="javascript: history.go(-1)">
+    <img id="back-arrow" src="../public/afbeeldingen/back-arrow.png"></a>
+    <h1>Voeding</h1>
+  </header>
+
+  <main class="content-with-nav">
+
+    <div class="content-inner">
+      <div id="slide-outer">
+        <div id="slide1" class="zichtbaar">
+          <div id="div-inner">
+          <p>
+            Naast je trainingen is ook <span id="highlight-text-groen">voeding</span> zeer belangrijk. Wanneer je de juiste voedingswaarden eet per dag, kan het proces van spieropbouw versneld en verbeterd worden.</p>
+            <p>De 3 belangrijkste voedingsbestanddelen zijn eiwitten, koolhydraten en vetten.</p>
+          </p>
+        </div>
+          <div class="nextprev">
+            <button id="btn-green" class="btn-next-prev" style="visibility: hidden;" onclick="previous()">Vorige</button>
+            <p>1/4</p>
+            <button id="btn-green" class="btn-next-prev" onclick="next()">Volgende</button>
+          </div>
+        </div>
+
+        <div id="slide2" class="onzichtbaar">
+          <div id="div-inner">
+          <p>
+            <span id="highlight-text-groen">Eiwitten</span> liggen aan de basis van spieropbouw en herstel.</p>
+          <p>Om de scheurtjes die ontstaan tijdens het sporten op te vullen, gebruikt je lichaam <span id="highlight-text-groen">aminozuren</span>. Aminozuren zitten in eiwitten, die je uit verschillende soorten voeding kan halen.
+          </p>
+          <p>
+            De aminozuren die zich nestelen in de scheurtjes, maken nieuw <span id="highlight-text-groen">spierweefsel en spiervezels</span> aan, waardoor je spieren sterker en groter worden.</p>
+            <p>Onder <span id="highlight-text-groen">Extra Info</span> vind je meer informatie over deze eiwitten en aminozuren.</p>
+          </div>
+          <div class="nextprev">
+            <button id="btn-green" class="btn-next-prev" onclick="previous()">Vorige</button>
+            <p>2/4</p>
+            <button class="btn-next-prev" id="btn-green" onclick="next()">Volgende</button>
+          </div>
+        </div>
+
+        <div id="slide3" class="onzichtbaar">
+          <div id="div-inner">
+          <p>  <span id="highlight-text-groen">Koolhydraten</span> geven je lichaam   <span id="highlight-text-groen">energie</span>. Zondere deze energie kan je niet optimaal sporten. </p>
+          <p>
+            Wanneer je een tekort aan koolhydraten hebt, begint je lichaam energie te halen uit eiwitten.
+            Dit moet je voorkomen, omdat eiwitten een andere functie hebben: groei en herstel.</p>
+            <p>Vooral   <span id="highlight-text-groen">complexe</span> koolhydraten zijn belangrijk, omdat ze je suikerspiegel niet laten stijgen. Deze zitten vooral in volkoren brood, havermout, volkorenpasta en rijst.
+            </p>
+            <p>  <span id="highlight-text-groen">Enkelvoudige</span> koolhydraten, zoals snoep, ijs, chocolade, gebak, ... vermijd je best.</p>
+          </div>
+          <div class="nextprev">
+            <button id="btn-green" class="btn-next-prev" onclick="previous()">Vorige</button>
+            <p>3/4</p>
+            <button class="unlock-btn btn-next-prev" id="btn-green" onclick="next()">Volgende</button>
+          </div>
+        </div>
+
+        <div id="slide4" class="onzichtbaar">
+          <div id="div-inner">
+          <p>  <span id="highlight-text-groen">Koolhydraten</span> geven je lichaam   <span id="highlight-text-groen">energie</span>. Zondere deze energie kan je niet optimaal sporten. </p>
+          <p>
+            Je lichaam heeft ook  <span id="highlight-text-groen">vetten</span> nodig, als voedingsstof. Vetten zijn een bron aan  <span id="highlight-text-groen">vitamine</span> A, D en E.</p>
+            <p>Vetten worden onderveeld in onverzadigde en verzadigde vetzuren</p>
+            <p> <span id="highlight-text-groen">Onverzadigd</span> vet (goede vetten) dragen bij tot een  <span id="highlight-text-groen">gezond cholesterolgehalte</span>. Deze vetten vind je vooral terug in vette vis (zalm, haring, makree, ...), olijfolie en avocado's.</p>
+            <p> <span id="highlight-text-groen">Verzadigd</span> vet kunnen het cholesterolgehalte verhogen en zijn daarom  <span id="highlight-text-groen">ongezond</span>. Dit vind je vooral terug in kaas, room, fastfood, gebak, ... Probeer deze zo vaak mogelijk te vermijden.</p>
+          </p>
+          </div>
+          <div class="nextprev">
+            <button id="btn-green" class="btn-next-prev" onclick="previous()">Vorige</button>
+            <p>4/4</p>
+            <a id="btn-green" class="btn-next-prev" style="visibility: hidden;" href="../home.html">Hoofdmenu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="remove" class="btn-bottom locked">
+
+    <!-- <a class="termen-btn" href="calculator.html">
+      <h1>Calculator</h1>
+    </a> -->
+
+    <div class="btn-bottom-two-columns">
+      <a class="termen-btn" href="voedingsmiddelen.html">
+        <h1>Voedings-<br>middelen</h1>
+      </a>
+
+      <a class="termen-btn" href="voeding_extra.html">
+        <h1>Extra <br>info</h1>
+      </a>
+    </div>
+  </div>
+
+  <footer id="footer-groen">
+    <ul class="footer-nav">
+      <li>
+        <div>
+          <a href="../basis/basis_start.html"><img src="../public/afbeeldingen/basis-black.png"></a>
+        </div>
+      </li>
+      <li><a href="../oefeningen/oefeningen_start.html"><img src="../public/afbeeldingen/oefeningen-black.png"></a></li>
+      <li id="active-tab-footer">
+        <div>
+          <a href="voeding_start.html"><img src="../public/afbeeldingen/voeding-green.png"></a>
+          <p style="color: #6ab04c;">Voeding</p>
+        </div>
+      </li>
+    </ul>
+  </footer>
+
+  <!--Importeren scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script src="../javascript/index.js"></script>
+
+</body>
+
+</html>
