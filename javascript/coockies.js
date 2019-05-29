@@ -20,6 +20,7 @@ function getCookie(cname) {
 
 function checkCookie() {
   var user=getCookie("username");
+  console.log(user);
   var locked_section = document.getElementById('remove');
   if (user != "") {
     locked_section.classList.remove("locked");
