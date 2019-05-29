@@ -34,3 +34,4 @@ function checkCookie() {
        setCookie("username", user, 30);
      }
   }
+}
