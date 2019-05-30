@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="oefeningen">
+<body class="oefeningen" id="body_locked_content">
 
   <header id="header-rood">
     <img id="back-arrow" style="visibility: hidden;" src="public/afbeeldingen/back-arrow.png">
@@ -63,7 +63,7 @@
           <div class="nextprev">
             <button id="btn-red" class="btn-next-prev" onclick="previous()">Vorige</button>
             <p>2/3</p>
-            <button class="unlock-btn btn-next-prev" id="btn-red" onclick="next()">Volgende</button>
+            <button class="btn-next-prev" id="btn-red" onclick="next()">Volgende</button>
           </div>
         </div>
 
@@ -80,14 +80,14 @@
           <div class="nextprev">
             <button id="btn-red" class="btn-next-prev" onclick="previous()">Vorige</button>
             <p>3/3</p>
-            <a id="btn-red" class="btn-next-prev" style="visibility: hidden;" href="../home.html">Hoofdmenu</a>
+            <button class="btn-next-prev" id="btn-red" onclick="finish_oefeningen()">Klaar!</button>
           </div>
         </div>
       </div>
     </div>
   </main>
 
-  <div id="remove" class="btn-bottom locked">
+  <div id="remove_oefeningen" class="btn-bottom locked">
 
     <a class="termen-btn" href="oefeningen_per_spiergroep.html">
       <h1>Alle oefeningen</h1>
@@ -120,6 +120,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
   <script src="../javascript/index.js"></script>
+  <script src="../javascript/local_storage.js"></script>
 
 </body>
 

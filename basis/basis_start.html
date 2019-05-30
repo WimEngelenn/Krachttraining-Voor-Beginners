@@ -22,7 +22,7 @@
 
 </head>
 
-<body onload="checkCookie()" class="basis">
+<body onload="checkCookie()" class="basis" id="body_locked_content">
 
   <header id="header-blauw">
     <img id="back-arrow" style="visibility: hidden;" src="../public/afbeeldingen/back-arrow.png">
@@ -52,7 +52,7 @@
               <div id="slide2" class="onzichtbaar">
                 <div id="div-inner">
                 <p>Door je lichaam te versterken zullen je spieren sterker, maar ook groter worden, waardoor je extra <span id="highlight-text-blauw">massa</span> creëert.
-                  Tijdens de training ontstaan er <span id="highlight-text-blauw">scheurtjes</soan> in je spieren. Na de training begint je lichaam deze scheurtjes te <span id="highlight-text-blauw">herstellen</span>.
+                  Tijdens de training ontstaan er <span id="highlight-text-blauw">scheurtjes</span> in je spieren. Na de training begint je lichaam deze scheurtjes te <span id="highlight-text-blauw">herstellen</span>.
                 </p>
               </div>
                 <div class="nextprev">
@@ -71,7 +71,7 @@
                 <div class="nextprev">
                   <button class="btn-next-prev" id="btn-blue" onclick="previous()">Vorige</button>
                   <p>3/4</p>
-                  <button class="unlock-btn btn-next-prev" id="btn-blue" onclick="next()">Volgende</button>
+                  <button class="btn-next-prev" id="btn-blue" onclick="next()">Volgende</button>
               </div>
             </div>
 
@@ -84,7 +84,7 @@
               <div class="nextprev">
                 <button class="btn-next-prev" id="btn-blue" onclick="previous()">Vorige</button>
                 <p>4/4</p>
-                <a class="btn-next-prev" id="btn-blue" style="visibility: hidden;" href="../home.html">Hoofdmenu</a>
+                <button class="btn-next-prev" id="btn-blue" onclick="finish_basis()">Klaar!</button>
             </div>
           </div>
       </div>
@@ -97,7 +97,7 @@
   Voltooi daarom eerst bovenstaande stappen. Daarna kan je meer te weten komen over de veelgebruikte termen en tips.</span>
   </div> -->
 
-<div id="remove" class="btn-bottom locked">
+<div id="remove_basis" class="btn-bottom locked">
   <div class="btn-bottom-two-columns">
   <a class="termen-btn" href="termen.html">
     <h1>Belangrijke termen</h1>
@@ -127,8 +127,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-  <script src="../javascript/coockies.js"></script>
   <script src="../javascript/index.js"></script>
+  <script src="../javascript/local_storage.js"></script>
 
 
 </body>
