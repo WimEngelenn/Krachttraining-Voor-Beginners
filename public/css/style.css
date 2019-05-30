@@ -85,6 +85,10 @@ ul {
 #highlight-text-blauw {
   color: #22a6b3; }
 
+.termen #highlight-text-blauw {
+  font-weight: 600;
+  color: black; }
+
 #highlight-text-groen {
   color: #6ab04c; }
 
@@ -94,13 +98,13 @@ Introductie pagina
 .introductie {
   text-align: center;
   padding-bottom: 0;
-  padding-top: 10vh;
+  padding-top: 5vh;
   margin-bottom: 0; }
   .introductie .content-inner {
     padding: 5vh 35px;
     opacity: 0;
-    -webkit-animation: fadein 2.5s ease forwards;
-    animation: fadein 2.5s ease forwards; }
+    -webkit-animation: fadein 2s ease forwards;
+    animation: fadein 2s ease forwards; }
     .introductie .content-inner h1 {
       margin-bottom: 10px; }
 
@@ -671,7 +675,8 @@ Pagina informatie per spiergroep
     margin: 15% auto;
     padding: 30px;
     width: 80%;
-    border-radius: 15px; }
+    border-radius: 15px;
+    position: relative; }
     .pop-up .pop-up-inner h3 {
       margin-bottom: 20px;
       color: white; }
@@ -680,7 +685,9 @@ Pagina informatie per spiergroep
       color: white; }
   .pop-up .close {
     color: white;
-    float: right;
+    position: absolute;
+    top: 21px;
+    right: 30px;
     font-size: 35px;
     font-weight: bold; }
 
