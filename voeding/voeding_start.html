@@ -94,19 +94,25 @@
           <div class="nextprev">
             <button id="btn-green" class="btn-next-prev" onclick="previous()">Vorige</button>
             <p>4/4</p>
-            <button class="btn-next-prev" id="btn-green" onclick="finish_voeding()">Klaar!</button>
+            <button class="btn-next-prev" id="btn-green" onclick="this.style.visibility='hidden';finish_voeding()">Klaar!</button>
           </div>
         </div>
       </div>
     </div>
   </main>
 
+  <div id="pop-up-content" class="pop-up">
+
+    <div class="pop-up-inner">
+      <span class="close">&times;</span>
+      <h3>Bijna!</h3>
+      <p>Voltooi eerst de stappen hierboven. Voeding en sport kunnen niet zonder elkaar. Leer eerst de basis.</p>
+      <p> Vanaf dan krijg je toegang tot de andere pagina's.</p>
+    </div>
+
+  </div>
+
   <div id="remove_voeding" class="btn-bottom locked">
-
-    <!-- <a class="termen-btn" href="calculator.html">
-      <h1>Calculator</h1>
-    </a> -->
-
     <div class="btn-bottom-two-columns">
       <a class="termen-btn" href="voedingsmiddelen.html">
         <h1>Voedings-<br>middelen</h1>
@@ -141,6 +147,7 @@
 
   <script src="../javascript/index.js"></script>
   <script src="../javascript/local_storage.js"></script>
+  <script src="../javascript/pop-up-locked.js"></script>
 
 </body>
 

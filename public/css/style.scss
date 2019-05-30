@@ -298,9 +298,11 @@ Vorige/volgende knoppen
 Vergrendelde blokken
 */
 .locked {
-  pointer-events: none;
+
 .termen-btn {
   position: relative;
+  pointer-events: none;
+  opacity: 0.5;
 }
 
   .termen-btn:after {
@@ -311,7 +313,7 @@ Vergrendelde blokken
             right: 0;
             position: absolute;
             background: url("../afbeeldingen/lock.png");
-            background-size: 20px;
+            background-size: 30px;
             background-repeat: no-repeat;
             background-position: center center;
           }

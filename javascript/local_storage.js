@@ -17,6 +17,7 @@ function main() {
 function finish_basis() {
   localStorage.setItem("basis_intro_ls", true);
   checkIntro();
+
 }
 
 function finish_oefeningen() {

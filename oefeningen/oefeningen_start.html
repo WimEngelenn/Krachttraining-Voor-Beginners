@@ -80,12 +80,23 @@
           <div class="nextprev">
             <button id="btn-red" class="btn-next-prev" onclick="previous()">Vorige</button>
             <p>3/3</p>
-            <button class="btn-next-prev" id="btn-red" onclick="finish_oefeningen()">Klaar!</button>
+            <button class="btn-next-prev" id="btn-red" onclick="this.style.visibility='hidden';finish_oefeningen()">Klaar!</button>
           </div>
         </div>
       </div>
     </div>
   </main>
+
+  <div id="pop-up-content" class="pop-up">
+
+    <div class="pop-up-inner">
+      <span class="close">&times;</span>
+      <h3>Bijna!</h3>
+      <p>Voltooi eerst de stappen hierboven. Voor je begint met je oefeningen, weet je best wat meer over verschillende routines.</p>
+      <p> Vanaf dan krijg je toegang tot de andere pagina's.</p>
+    </div>
+
+  </div>
 
   <div id="remove_oefeningen" class="btn-bottom locked">
 
@@ -121,6 +132,7 @@
 
   <script src="../javascript/index.js"></script>
   <script src="../javascript/local_storage.js"></script>
+  <script src="../javascript/pop-up-locked.js"></script>
 
 </body>
 

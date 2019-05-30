@@ -262,21 +262,22 @@ Vorige/volgende knoppen
 /*
 Vergrendelde blokken
 */
-.locked {
-  pointer-events: none; }
-  .locked .termen-btn {
-    position: relative; }
-  .locked .termen-btn:after {
-    content: "";
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    background: url("../afbeeldingen/lock.png");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center center; }
+.locked .termen-btn {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.5; }
+
+.locked .termen-btn:after {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: url("../afbeeldingen/lock.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .warning:before {
   content: "Doorloop eerst de stappen hierboven.";

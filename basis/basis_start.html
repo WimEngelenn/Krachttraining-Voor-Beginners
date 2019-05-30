@@ -84,20 +84,25 @@
               <div class="nextprev">
                 <button class="btn-next-prev" id="btn-blue" onclick="previous()">Vorige</button>
                 <p>4/4</p>
-                <button class="btn-next-prev" id="btn-blue" onclick="finish_basis()">Klaar!</button>
+                <button class="btn-next-prev finish" id="btn-blue" onclick="this.style.visibility='hidden';finish_basis()">Klaar!</button>
             </div>
           </div>
       </div>
 </div>
   </main>
 
-  <!-- <div class="information-extra" style="background: white;">
-  <img id="information-icon" src="../public/afbeeldingen/information.png">
-  <span style="display: block; font-size: 12px; margin-bottom: 20px; border-left: 3px solid #0083B0; padding-left: 10px; line-height: 1.35em;">Het is belangrijk om eerst de basis van krachttraining te kennen.
-  Voltooi daarom eerst bovenstaande stappen. Daarna kan je meer te weten komen over de veelgebruikte termen en tips.</span>
-  </div> -->
+  <div id="pop-up-content" class="pop-up">
 
-<div id="remove_basis" class="btn-bottom locked">
+    <div class="pop-up-inner">
+      <span class="close">&times;</span>
+      <h3>Bijna!</h3>
+      <p>Voltooi eerst de stappen hierboven. De basiskennis van krachttraining is belangrijk.</p>
+      <p> Vanaf dan krijg je toegang tot de andere pagina's.</p>
+    </div>
+
+  </div>
+
+<div id="remove_basis" class="btn-bottom locked" >
   <div class="btn-bottom-two-columns">
   <a class="termen-btn" href="termen.html">
     <h1>Belangrijke termen</h1>
@@ -129,6 +134,7 @@
 
   <script src="../javascript/index.js"></script>
   <script src="../javascript/local_storage.js"></script>
+  <script src="../javascript/pop-up-locked.js"></script>
 
 
 </body>
