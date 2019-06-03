@@ -15,7 +15,7 @@ body {
   font-size: 10px;
   background: #E9EBF1; }
 
-#body_locked_content {
+#body_locked_content, #introductie {
   display: none; }
 
 button {

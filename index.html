@@ -20,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="introductie">
+<body class="introductie" id="introductie">
 
 <main>
   <div class="content-inner">
@@ -49,7 +49,7 @@
              Met behulp van deze app weet jij als de beste hoe je oefeningen moet uitvoeren, wat de impact van voeding op je spieren is en hoe je deze spieren sneller laat groeien.</p>
           <div class="nextprev">
             <button class="btn-next-prev" id="btn-red" onclick="previous()">Vorige</button>
-            <a class="btn-next-prev" id="btn-red" href="basis/basis_start.html" style="height: 35px; padding-top: 12.2px;">Start</a>
+            <a onclick="check_returning_visitor()" class="btn-next-prev" id="btn-red" href="basis/basis_start.html" style="height: 35px; padding-top: 12.2px;">Start</a>
           <!-- <button class="btn-next-prev" id="btn-red" onclick="next()">Volgende</button> -->
         </div>
       </div>
@@ -63,6 +63,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="javascript/index.js"></script>
+  <script src="javascript/startscherm_local_storage.js"></script>
 
 </body>
 
