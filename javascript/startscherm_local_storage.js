@@ -24,7 +24,7 @@ function checkFirstVisitor() {
 
     window.setTimeout(function () {
         location.href = "/basis/basis_start.html";
-    }, 2000);
+    }, 1000);
   }
 }
 
