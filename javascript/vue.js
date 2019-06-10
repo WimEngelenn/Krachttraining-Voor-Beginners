@@ -1,3 +1,5 @@
+//Footer component
+
 Vue.component('footercomp', {
   props: {
     urlprefix: String,
@@ -40,39 +42,304 @@ Vue.component('footercomp', {
    `
 })
 
+
+//Header component
+
 Vue.component('headercomp', {
   props: {
     title: String,
-    displaystyle: String
+    displaystyle: String,
+    urlprefix: String
   },
   template: `
   <div>
   <a :style="{ display: displaystyle }" href="javascript: history.go(-1)">
-  <img id="back-arrow" src="../public/afbeeldingen/back-arrow-black.png"></a>
+  <img id="back-arrow" :src="urlprefix + 'public/afbeeldingen/back-arrow-black.png'"></a>
   <h1>{{ title }}</h1>
   </div>
    `
 })
 
-Vue.component('headercomp-n2', {
-  props: {
-    title: String,
-    displaystyle: String
-  },
+//Oefeningen Triceps
+
+Vue.component('oefeningentriceps', {
+  data: function() {
+    return {
+    oefeningentricepsarray: [
+    {
+      naam: 'Rope pushdown',
+      url: 'rope_pushdown.html'
+    },
+    {
+      naam: 'Skullcrushers',
+      url: '#'
+    },
+    {
+      naam: 'Close grip bench-press (C)',
+      url: '#'
+    },
+    {
+      naam: 'Sitting tricep extension',
+      url: '#'
+    },
+    {
+      naam: 'Close hands pushup',
+      url: '#'
+    },
+    {
+      naam: 'Standing dumbbell overhead triceps extension',
+      url: '#'
+    },
+    ]
+  }},
   template: `
-  <div>
-  <a :style="{ display: displaystyle }" href="javascript: history.go(-1)">
-  <img id="back-arrow" src="../../public/afbeeldingen/back-arrow-black.png"></a>
-  <h1>{{ title }}</h1>
-  </div>
-   `
+  <ul class="oefeningen-lijst">
+  <a v-for="oefening in oefeningentricepsarray" :href="oefening.url">
+  <li>
+  <h3> {{ oefening.naam }}</h3>
+  <img id="forward-btn" src="../../public/afbeeldingen/arrow_black_forward.png">
+  </li>
+  </a>
+  </ul>
+  `
 })
+
+//Oefeningen Schouders
+
+Vue.component('oefeningenschouders', {
+  data: function() {
+    return {
+    oefeningenschoudersarray: [
+    {
+      naam: 'Dumbbell shoulder press',
+      url: 'dumbbell_shoulder_press.html'
+    },
+    {
+      naam: 'Arnold press (C)',
+      url: '#'
+    },
+    {
+      naam: 'Dumbbell front raises',
+      url: '#'
+    },
+    {
+      naam: 'Dumbbell side raises',
+      url: '#'
+    }
+    ]
+  }},
+  template: `
+  <ul class="oefeningen-lijst">
+  <a v-for="oefening in oefeningenschoudersarray" :href="oefening.url">
+  <li>
+  <h3> {{ oefening.naam }}</h3>
+  <img id="forward-btn" src="../../public/afbeeldingen/arrow_black_forward.png">
+  </li>
+  </a>
+  </ul>
+  `
+})
+
+//Oefeningen Rug
+
+Vue.component('oefeningenrug', {
+  data: function() {
+    return {
+    oefeningenrugarray: [
+    {
+      naam: 'Lat pulldown (C)',
+      url: 'lat_pulldown.html'
+    },
+    {
+      naam: 'Deadlift (C)',
+      url: '#'
+    },
+    {
+      naam: 'Wide grip pull-up (C)',
+      url: '#'
+    },
+    {
+      naam: 'Seated cable row (C)',
+      url: '#'
+    },
+    {
+      naam: 'Dumbbell row',
+      url: '#'
+    }
+    ]
+  }},
+  template: `
+  <ul class="oefeningen-lijst">
+  <a v-for="oefening in oefeningenrugarray" :href="oefening.url">
+  <li>
+  <h3> {{ oefening.naam }}</h3>
+  <img id="forward-btn" src="../../public/afbeeldingen/arrow_black_forward.png">
+  </li>
+  </a>
+  </ul>
+  `
+})
+
+//Oefeningen borst
+
+Vue.component('oefeningenborst', {
+  data: function() {
+    return {
+    oefeningenborstarray: [
+    {
+      naam: 'Bench press (C)',
+      url: '#'
+    },
+    {
+      naam: 'Dumbbell press (C)',
+      url: '#'
+    },
+    {
+      naam: 'Incline dumbbell press (C)',
+      url: 'incline_dumbbell_press.html'
+    },
+    {
+      naam: 'Cable flyes',
+      url: '#'
+    },
+    {
+      naam: 'Dips (C)',
+      url: '#'
+    }
+    ]
+  }},
+  template: `
+  <ul class="oefeningen-lijst">
+  <a v-for="oefening in oefeningenborstarray" :href="oefening.url">
+  <li>
+  <h3> {{ oefening.naam }}</h3>
+  <img id="forward-btn" src="../../public/afbeeldingen/arrow_black_forward.png">
+  </li>
+  </a>
+  </ul>
+  `
+})
+
+//Oefeningen biceps
+
+Vue.component('oefeningenbiceps', {
+  data: function() {
+    return {
+    oefeningenbicepsarray: [
+    {
+      naam: 'Dumbbell bicep curl',
+      url: 'dumbbell_bicep_curl.html'
+    },
+    {
+      naam: 'Alternating curl',
+      url: 'dumbbell_press.html'
+    },
+    {
+      naam: 'Concentration curl',
+      url: '#'
+    },
+    {
+      naam: 'Pull-ups (C)',
+      url: '#'
+    },
+    {
+      naam: 'Seated hammer curl (C)',
+      url: '#'
+    }
+    ]
+  }},
+  template: `
+  <ul class="oefeningen-lijst">
+  <a v-for="oefening in oefeningenbicepsarray" :href="oefening.url">
+  <li>
+  <h3> {{ oefening.naam }}</h3>
+  <img id="forward-btn" src="../../public/afbeeldingen/arrow_black_forward.png">
+  </li>
+  </a>
+  </ul>
+  `
+})
+
+//Oefeningen benen
+
+Vue.component('oefeningenbenen', {
+  data: function() {
+    return {
+    oefeningenbenenarray: [
+    {
+      naam: 'Dumbbell front squat (C)',
+      url: 'dumbbell_front_squat.html'
+    },
+    {
+      naam: 'Standing calf raise',
+      url: '#'
+    },
+    {
+      naam: 'Leg press (C)',
+      url: '#'
+    },
+    {
+      naam: 'Deadlift (C)',
+      url: '#'
+    },
+    {
+      naam: 'Leg extension machine',
+      url: '#'
+    }
+    ]
+  }},
+  template: `
+  <ul class="oefeningen-lijst">
+  <a v-for="oefening in oefeningenbenenarray" :href="oefening.url">
+  <li>
+  <h3> {{ oefening.naam }}</h3>
+  <img id="forward-btn" src="../../public/afbeeldingen/arrow_black_forward.png">
+  </li>
+  </a>
+  </ul>
+  `
+})
+
+//Oefeningen abs
+
+Vue.component('oefeningenabs', {
+  data: function() {
+    return {
+    oefeningenabsarray: [
+    {
+      naam: 'Cable crunch',
+      url: '#'
+    },
+    {
+      naam: 'Plank (C)',
+      url: '#'
+    },
+    {
+      naam: 'Russian twists',
+      url: '#'
+    },
+    {
+      naam: 'Hanging leg raises (C)',
+      url: '#'
+    }
+    ]
+  }},
+  template: `
+  <ul class="oefeningen-lijst">
+  <a v-for="oefening in oefeningenabsarray" :href="oefening.url">
+  <li>
+  <h3> {{ oefening.naam }}</h3>
+  <img id="forward-btn" src="../../public/afbeeldingen/arrow_black_forward.png">
+  </li>
+  </a>
+  </ul>
+  `
+})
+
 
 var app = new Vue({
   el: '#app',
   data: {
-    next_btn_img: '../public/afbeeldingen/arrow_black_forward.png',
-    next_btn_id: 'forward-btn',
     oefeningen_links: [
       {
         url: 'abs/overzicht.html',

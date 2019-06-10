@@ -2,15 +2,15 @@
 <html lang="nl">
 
 <head>
-  <title>Krachttraining voor beginners - Oefeningen - Per spiergroep</title>
+  <title>Krachttraining voor beginners - Oefeningen - Overzicht</title>
 
   <!--Importeren stylesheets -->
 
   <link rel="stylesheet" type="text/css" href="../public/css/reset.css">
   <link rel="stylesheet" type="text/css" href="../public/css/style.css">
 
-  <link rel="shortcut icon" type="image/png" href="public/afbeeldingen/favicon.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="public/afbeeldingen/icon.png" />
+  <link rel="shortcut icon" type="image/png" href="../public/afbeeldingen/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../public/afbeeldingen/icon.png" />
 
   <!--Importeren fonts -->
 
@@ -25,7 +25,7 @@
   <div id="app">
 
     <header>
-    <headercomp title="Oefeningen per spiergroep" displaystyle="block"></headercomp>
+    <headercomp title="Oefeningen per spiergroep" displaystyle="block" urlprefix="../"></headercomp>
       </header>
 
     <main class="content-with-nav">
@@ -57,7 +57,7 @@
           <li>
             <img :src="item.img">
             <h3> {{ item.spiergroep }}</h3>
-            <img :id="next_btn_id" :src="next_btn_img">
+            <img id="forward-btn" src="../public/afbeeldingen/arrow_black_forward.png">
           </li>
         </a>
       </ul>

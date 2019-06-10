@@ -1,21 +1,3 @@
-
-// Vue.component('Beginscherm', {
-// template: `
-// <div class="content container">
-//   <img id="welkom_logo" src="public/afbeeldingen/logo_KVB.png">
-// <h1>Welkom</h1>
-//
-// <p><span>Krachttraining Voor Beginners</span> is jouw bron van informatie over krachttraining en voeding.</p>
-//
-// <a href="introductie/introductie.html" target="_self">Laten we starten!</a>
-// </div>
-// `
-// });
-
-var app = new Vue({
-  el: '#app',
-})
-
 //Collapsible
 
 var collapsible = document.getElementsByClassName("collapse-heading");
@@ -33,14 +15,16 @@ for (teller = 0; teller < collapsible.length; teller++) {
   });
 }
 
+//Verwijdert locked class wanneer er geklikt wordt op de laatste button per introductie-sectie
+
 $(document).ready(function(){
 $(".unlock-btn").click(function(){
   $("#remove").removeClass("locked");
-  // $("#remove-id").removeClass("warning");
 });
 });
 
 //Tabs
+
 var sliders = [
   "slide1",
   "slide2",
@@ -64,14 +48,13 @@ function previous() {
   makeVisible(sliders[currentTab]);
 }
 
-function makeVisible(tabName) {
-  console.log(tabName);
-  var slider = document.getElementById(tabName);
-  slider.className = "zichtbaar";
-}
-
 function makeInvisible() {
   for(var i = 0; i < sliderPs.length; i++) {
      sliderPs[i].className="onzichtbaar";
   }
+}
+
+function makeVisible(tabName) {
+  var slider = document.getElementById(tabName);
+  slider.className = "zichtbaar";
 }

@@ -4,15 +4,11 @@
 <head>
   <title>Krachttraining voor beginners - Basis</title>
 
-  <!--Importeren stylesheets -->
-
   <link rel="stylesheet" type="text/css" href="../public/css/reset.css">
   <link rel="stylesheet" type="text/css" href="../public/css/style.css">
 
-  <link rel="shortcut icon" type="image/png" href="../public/afbeeldingen/favicon.png"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="../public/afbeeldingen/icon.png"/>
-
-  <!--Importeren fonts -->
+  <link rel="shortcut icon" type="image/png" href="../public/afbeeldingen/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../public/afbeeldingen/icon.png" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -22,122 +18,112 @@
 
 </head>
 
-<body onload="checkCookie()" class="basis" id="body_locked_content">
+<body class="basis" id="body_locked_content">
   <div id="app">
 
     <header>
-    <headercomp title="Krachttraining: de basis" displaystyle="none"></headercomp>
-      </header>
+      <headercomp title="Krachttraining: de basis" displaystyle="none" urlprefix=""></headercomp>
+    </header>
 
-  <main class="content-with-nav">
-    <div class="content-inner">
-      <div id="slide-outer">
-              <div id="slide1" class="zichtbaar">
-                <div id="div-inner">
-                <p>
+    <main>
+      <div class="content-inner">
+        <div id="slide-outer">
+          <div id="slide1" class="zichtbaar">
+            <div id="div-inner">
+              <p>
                 Voor je begint met krachttraining is het belangrijk dat je weet wat krachttraining juist is en wat je er mee kan bereiken.
                 Krachttraining is eenvoudig gezegd het <span id="highlight-text-blauw">versterken</span> van je lichaam met behulp van gewichten.
-      </p>
-    </div>
-                <div class="nextprev">
-                  <button class="btn-next-prev" id="btn-blue" style="visibility: hidden;" onclick="previous()">Vorige</button>
-                  <p>1/4</p>
-                <button class="btn-next-prev" id="btn-blue" onclick="next()">Volgende</button>
-              </div>
+              </p>
             </div>
+            <div class="nextprev">
+              <button style="visibility: hidden;">Vorige</button>
+              <p>1/4</p>
+              <button class="btn-next-prev" id="btn-blue" onclick="next()">Volgende</button>
+            </div>
+          </div>
 
-              <div id="slide2" class="onzichtbaar">
-                <div id="div-inner">
-                <p>Door een bepaalde kracht op je lichaam uit te oefenen zullen je spieren sterker, maar ook groter worden, waardoor je extra <span id="highlight-text-blauw">massa</span> creëert.
-                  Tijdens de training ontstaan er <span id="highlight-text-blauw">scheurtjes</span> in je spieren. Na de training begint je lichaam deze scheurtjes te <span id="highlight-text-blauw">herstellen</span>.
-                </p>
-              </div>
-                <div class="nextprev">
-                  <button class="btn-next-prev" id="btn-blue" onclick="previous()">Vorige</button>
-                  <p>2/4</p>
-                <button class="btn-next-prev" id="btn-blue" onclick="next()">Volgende</button>
-              </div>
+          <div id="slide2" class="onzichtbaar">
+            <div id="div-inner">
+              <p>Door een bepaalde kracht op je lichaam uit te oefenen zullen je spieren sterker, maar ook groter worden,
+                waardoor je extra <span id="highlight-text-blauw">massa</span> creëert. Tijdens de training ontstaan er <span id="highlight-text-blauw">scheurtjes</span>                in je spieren. Na de training begint je lichaam deze scheurtjes te <span id="highlight-text-blauw">herstellen</span>.
+              </p>
             </div>
+            <div class="nextprev">
+              <button class="btn-next-prev" id="btn-blue" onclick="previous()">Vorige</button>
+              <p>2/4</p>
+              <button class="btn-next-prev" id="btn-blue" onclick="next()">Volgende</button>
+            </div>
+          </div>
 
-              <div id="slide3" class="onzichtbaar">
-                <div id="div-inner">
-                <p>
-                Tijdens het herstellen van deze scheurtjes maakt je lichaam <span id="highlight-text-blauw">meer spierweefsel</span> aan dan dat je voor je training had. Je lichaam herstelt zich boven
-              zijn oorspronkelijk niveau. Op die manier groeien je spieren.</p>
-            </div>
-                <div class="nextprev">
-                  <button class="btn-next-prev" id="btn-blue" onclick="previous()">Vorige</button>
-                  <p>3/4</p>
-                  <button class="btn-next-prev" id="btn-blue" onclick="next()">Volgende</button>
-              </div>
-            </div>
-
-            <div id="slide4" class="onzichtbaar">
-              <div id="div-inner">
+          <div id="slide3" class="onzichtbaar">
+            <div id="div-inner">
               <p>
-              Je spieren worden steeds sterker. Daarom is het belangrijk om stelselmatig de <span id="highlight-text-blauw">intensiteit</span> van je training te verhogen.
-            Dit doe je door meer herhalingen per oefening te doen of een hoger gewicht te heffen.</p>
-          </div>
-              <div class="nextprev">
-                <button class="btn-next-prev" id="btn-blue" onclick="previous()">Vorige</button>
-                <p>4/4</p>
-                <button class="btn-next-prev finish" id="btn-blue" onclick="this.style.visibility='hidden';finish_basis()">Klaar!</button>
+                Tijdens het herstellen van deze scheurtjes maakt je lichaam <span id="highlight-text-blauw">meer spierweefsel</span> aan
+                dan dat je voor je training had. Je lichaam herstelt zich boven zijn oorspronkelijk niveau. Op die manier groeien je spieren.
+              </p>
+            </div>
+            <div class="nextprev">
+              <button class="btn-next-prev" id="btn-blue" onclick="previous()">Vorige</button>
+              <p>3/4</p>
+              <button class="btn-next-prev" id="btn-blue" onclick="next()">Volgende</button>
             </div>
           </div>
+
+          <div id="slide4" class="onzichtbaar">
+            <div id="div-inner">
+              <p>
+                Je spieren worden steeds sterker. Daarom is het belangrijk om stelselmatig de <span id="highlight-text-blauw">intensiteit</span> van je training te verhogen.
+                Dit doe je door meer herhalingen per oefening te doen of een hoger gewicht te heffen.
+              </p>
+            </div>
+            <div class="nextprev">
+              <button class="btn-next-prev" id="btn-blue" onclick="previous()">Vorige</button>
+              <p>4/4</p>
+              <button class="btn-next-prev finish" id="btn-blue" onclick="this.style.visibility='hidden';finish_basis()">Klaar!</button>
+            </div>
+          </div>
+        </div>
       </div>
-</div>
-  </main>
+    </main>
 
-  <div id="pop-up-content" class="pop-up">
+<!-- Pop-up indien de gebruiker pagina's wil bereiken die nog niet vrijgespeeld zijn-->
 
-    <div class="pop-up-inner">
-      <span class="close">&times;</span>
-      <h3>Bijna!</h3>
-      <p>Voltooi eerst de stappen hierboven. De basiskennis van krachttraining is belangrijk.</p>
-      <p> Vanaf dan krijg je toegang tot de andere pagina's.</p>
+    <div id="pop-up-content" class="pop-up">
+      <div class="pop-up-inner">
+        <span class="close">&times;</span>
+        <h3>Bijna!</h3>
+        <p>Voltooi eerst de stappen hierboven. De basiskennis van krachttraining is belangrijk.</p>
+        <p> Vanaf dan krijg je toegang tot de andere pagina's.</p>
+      </div>
     </div>
+
+<!-- Vrij te spelen pagina's-->
+
+    <div id="remove_basis" class="btn-bottom locked">
+      <div class="btn-bottom-two-columns">
+        <a class="termen-btn" href="termen.html">
+          <h1>Belangrijke termen</h1>
+        </a>
+        <a class="termen-btn" href="tips.html">
+          <h1>Tips <br> & Tricks</h1>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <footercomp urlprefix="../" displayoef="none" displaybasis="block" displayvoeding="none" footeridoef="" footeridbasis="active-tab-footer" footeridvoeding="" kleurbasis="blue" kleuroef="black" kleurvoeding="black">
+      </footercomp>
+    </footer>
 
   </div>
 
-<div id="remove_basis" class="btn-bottom locked" >
-  <div class="btn-bottom-two-columns">
-  <a class="termen-btn" href="termen.html">
-    <h1>Belangrijke termen</h1>
-  </a>
-
-  <a class="termen-btn" href="tips.html">
-    <h1>Tips <br> & Tricks</h1>
-  </a>
-</div>
-</div>
-
-<footer>
-<footercomp
-urlprefix="../"
-displayoef="none"
-displaybasis="block"
-displayvoeding="none"
-footeridoef=""
-footeridbasis="active-tab-footer"
-footeridvoeding=""
-kleurbasis="blue"
-kleuroef="black"
-kleurvoeding="black">
-</footercomp>
-</footer>
-
-</div>
-
-  <!--Importeren scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="../javascript/vue.js"></script>
 
+  <script src="../javascript/vue.js"></script>
   <script src="../javascript/index.js"></script>
   <script src="../javascript/local_storage.js"></script>
   <script src="../javascript/pop-up-locked.js"></script>
 
-
 </body>
-
 </html>

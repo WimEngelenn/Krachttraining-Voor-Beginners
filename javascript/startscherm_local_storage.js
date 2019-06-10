@@ -1,3 +1,4 @@
+//Controleert of een gebruiker de introductie reeds doorlopen heeft. Zo ja, wordt er enkel een laadscherm getoond, dat automatisch door gaat naar de basis.
 
 var remove_content_start = document.getElementById("slide-outer");
 

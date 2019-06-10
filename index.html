@@ -4,14 +4,11 @@
 <head>
   <title>Krachttraining voor beginners</title>
 
-  <!--Importeren stylesheets -->
-
   <link rel="stylesheet" type="text/css" href="public/css/reset.css">
   <link rel="stylesheet" type="text/css" href="public/css/style.css">
 
-  <link rel="shortcut icon" type="image/png" href="public/afbeeldingen/favicon.png"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="public/afbeeldingen/icon.png"/>
-  <!--Importeren fonts -->
+  <link rel="shortcut icon" type="image/png" href="public/afbeeldingen/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="public/afbeeldingen/icon.png" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -22,49 +19,51 @@
 
 <body class="introductie" id="introductie">
 
-<main>
-  <div class="content-inner">
+  <main>
 
-    <div class="logo">
-    <img id="welkom_logo" src="public/afbeeldingen/logo_KVB.png">
-  </div>
+    <div class="content-inner">
 
-    <h1>Welkom!</h1>
-<div id="slide-outer">
+      <div class="logo">
+        <img id="welkom_logo" src="public/afbeeldingen/logo_KVB.png">
+      </div>
+
+      <h1>Welkom!</h1>
+
+      <div id="slide-outer">
         <div id="slide1" class="zichtbaar">
           <p>
-          Je bent recent begonnen met krachttraining. Je bent gemotiveerd! Maar hoe begin je hier aan?</p>
-          <p><span id="highlight-text-rood">Krachttraining Voor Beginners</span>
-          biedt je informatie aan over de basisprincipes van krachttraining, verschillende oefeningen met duidelijke instructies en informatie over voeding.</p>
+            Je bent recent begonnen met krachttraining. Je bent gemotiveerd! Maar hoe begin je hier aan?</p>
+          <p><span id="highlight-text-rood">Krachttraining Voor Beginners</span> biedt je informatie aan over de basisprincipes van krachttraining, verschillende oefeningen met duidelijke instructies en informatie over voeding.</p>
           <div class="nextprev">
-            <button class="btn-next-prev" id="btn-red" style="visibility: hidden;" onclick="previous()">Vorige</button>
-          <button class="btn-next-prev" id="btn-red" onclick="next()">Volgende</button>
+            <button style="visibility: hidden;">Vorige</button>
+            <button class="btn-next-prev" id="btn-red" onclick="next()">Volgende</button>
+          </div>
         </div>
-      </div>
 
         <div id="slide2" class="onzichtbaar">
           <p>
-           Vooraleer je start met krachttraining is het belangrijk om de <span id="highlight-text-rood">basisprincipes</span> te kennen. Zo kan jij je doelen efficiënt, snel én slim behalen.</p>
-           <p>
-             Met behulp van deze app weet jij als de beste hoe je oefeningen moet uitvoeren, wat de impact van voeding op je spieren is en hoe je deze spieren sneller laat groeien.</p>
+            Vooraleer je start met krachttraining is het belangrijk om de <span id="highlight-text-rood">basisprincipes</span> te kennen.
+            Zo kan jij je doelen efficiënt, snel én slim behalen.</p>
+          <p>
+            Met behulp van deze app weet jij als de beste hoe je oefeningen moet uitvoeren, wat de impact van voeding op je spieren is en hoe je deze spieren sneller laat groeien.</p>
           <div class="nextprev">
             <button class="btn-next-prev" id="btn-red" onclick="previous()">Vorige</button>
-            <a onclick="check_returning_visitor()" class="btn-next-prev" id="btn-red" href="basis/basis_start.html" style="height: 35px; padding-top: 12.2px;">Start</a>
-          <!-- <button class="btn-next-prev" id="btn-red" onclick="next()">Volgende</button> -->
-        </div>
-      </div>
 
-</div>
+            <!-- Voegt Local Storage toe, zodat een terugkerende gebruiker de introductie niet meer te zien krijgt-->
+
+            <a onclick="check_returning_visitor()" class="btn-next-prev" id="btn-red" href="basis/basis_start.html" style="height: 35px; padding-top: 12.2px;">Start</a>
+          </div>
+        </div>
+
+      </div>
     </div>
 
   </main>
 
-  <!--Importeren scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="javascript/index.js"></script>
   <script src="javascript/startscherm_local_storage.js"></script>
-  <script src="javascript/vue.js"></script>
 
 </body>
 
