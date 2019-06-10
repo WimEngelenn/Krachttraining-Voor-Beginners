@@ -22,12 +22,11 @@
 </head>
 
 <body class="oefeningen" id="body_locked_content">
+  <div id="app">
 
-  <header id="header-rood">
-    <a style="display: none;" href="javascript: history.go(-1)">
-    <img id="back-arrow" src="../public/afbeeldingen/back-arrow.png"></a>
-    <h1>Oefeningen</h1>
-  </header>
+    <header>
+    <headercomp title="Oefeningen" displaystyle="none"></headercomp>
+      </header>
 
   <main class="content-with-nav">
 
@@ -104,31 +103,27 @@
     </a>
   </div>
 
-  <footer id="footer-rood">
-    <ul class="footer-nav">
-      <li>
-        <div>
-          <a href="../basis/basis_start.html"><img src="../public/afbeeldingen/basis-black.png"></a>
-        </div>
-      </li>
-      <li id="active-tab-footer">
-        <div>
-          <a href="oefeningen_start.html"><img src="../public/afbeeldingen/oefeningen-red.png"></a>
-        <p style="color: #eb4d4b;">Oefeningen</p>
-      </div>
-    </li>
-      <li>
-        <div>
-          <a href="../voeding/voeding_start.html"><img src="../public/afbeeldingen/voeding-black.png"></a>
-        </div>
-      </li>
-    </ul>
+  <footer>
+  <footercomp
+  urlprefix="../"
+  displayoef="block"
+  displaybasis="none"
+  displayvoeding="none"
+  footeridoef="active-tab-footer"
+  footeridbasis=""
+  footeridvoeding=""
+  kleurbasis="black"
+  kleuroef="red"
+  kleurvoeding="black">
+</footercomp>
   </footer>
 
+</div>
   <!--Importeren scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
+  <script src="../javascript/vue.js"></script>
   <script src="../javascript/index.js"></script>
   <script src="../javascript/local_storage.js"></script>
   <script src="../javascript/pop-up-locked.js"></script>

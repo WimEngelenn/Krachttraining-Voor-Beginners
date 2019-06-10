@@ -23,12 +23,11 @@
 </head>
 
 <body onload="checkCookie()" class="basis" id="body_locked_content">
+  <div id="app">
 
-  <header id="header-blauw">
-    <a style="display: none;" href="javascript: history.go(-1)">
-    <img id="back-arrow" src="../public/afbeeldingen/back-arrow.png"></a>
-    <h1>Krachttraining: de basis</h1>
-  </header>
+    <header>
+    <headercomp title="Krachttraining: de basis" displaystyle="none"></headercomp>
+      </header>
 
   <main class="content-with-nav">
     <div class="content-inner">
@@ -112,23 +111,27 @@
 </div>
 </div>
 
-  <footer id="footer-blauw">
-      <ul class="footer-nav">
-        <li id="active-tab-footer">
-          <a href="basis_start.html">
-          <div>
-        <img src="../public/afbeeldingen/basis-blue.png">
-        <p style="color: #22a6b3;">Basis</p>
-      </div></a>
-      </li>
-        <li><a href="../oefeningen/oefeningen_start.html"><img src="../public/afbeeldingen/oefeningen-black.png"></a></li>
-        <li><a href="../voeding/voeding_start.html"><img src="../public/afbeeldingen/voeding-black.png"></a></li>
-      </ul>
-  </footer>
+<footer>
+<footercomp
+urlprefix="../"
+displayoef="none"
+displaybasis="block"
+displayvoeding="none"
+footeridoef=""
+footeridbasis="active-tab-footer"
+footeridvoeding=""
+kleurbasis="blue"
+kleuroef="black"
+kleurvoeding="black">
+</footercomp>
+</footer>
+
+</div>
 
   <!--Importeren scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="../javascript/vue.js"></script>
 
   <script src="../javascript/index.js"></script>
   <script src="../javascript/local_storage.js"></script>

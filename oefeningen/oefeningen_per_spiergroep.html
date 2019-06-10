@@ -9,8 +9,8 @@
   <link rel="stylesheet" type="text/css" href="../public/css/reset.css">
   <link rel="stylesheet" type="text/css" href="../public/css/style.css">
 
-  <link rel="shortcut icon" type="image/png" href="public/afbeeldingen/favicon.png"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="public/afbeeldingen/icon.png"/>
+  <link rel="shortcut icon" type="image/png" href="public/afbeeldingen/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="public/afbeeldingen/icon.png" />
 
   <!--Importeren fonts -->
 
@@ -22,113 +22,68 @@
 </head>
 
 <body class="oefeningen-per-spiergroep">
+  <div id="app">
 
-  <header id="header-rood">
-    <a href="javascript: history.go(-1)">
-    <img id="back-arrow" src="../public/afbeeldingen/back-arrow-black.png"></a>
-    <h1>Oefeningen per spiergroep</h1>
-  </header>
+    <header>
+    <headercomp title="Oefeningen per spiergroep" displaystyle="block"></headercomp>
+      </header>
 
-  <main class="content-with-nav">
+    <main class="content-with-nav">
 
-    <div class="content-inner">
-      <div class="termen-info">
-        <p>
-          Elke spiergroep geeft een lijst van mogelijke oefeningen weer. Deze lijst is geen voorstelling van een volledige workout.
-          Denk er aan: <span id="pop-up-term">compound-oefeningen (C)</span> zijn belangrijker dan isolatie-oefeningen. Kies slim, en knallen maar!
-        </p>
+      <div class="content-inner">
+        <div class="termen-info">
+          <p>
+            Elke spiergroep geeft een lijst van mogelijke oefeningen weer. Deze lijst is geen voorstelling van een volledige workout. Denk er aan: <span id="pop-up-term">compound-oefeningen (C)</span> zijn belangrijker dan isolatie-oefeningen. Kies slim,
+            en knallen maar!
+          </p>
+        </div>
+
+        <div id="pop-up-content" class="pop-up">
+
+          <div class="pop-up-inner">
+            <span class="close">&times;</span>
+            <h3>Compound<br>oefeningen</h3>
+            <p>Oefeningen die verschillende spiergroepen tegelijk aanspreken. De Bench Press is hier een voorbeeld van. Deze target zowel de borst, als triceps en schouders.</p>
+            <p>Het tegengestelde zijn isolatie-oefeningen, waarbij je slechts één spiergroep target per oefening. </p>
+            <p>Compound oefeningen zijn aangeduid met (C).</p>
+          </div>
+
+        </div>
       </div>
-
-<div id="pop-up-content" class="pop-up">
-
-  <div class="pop-up-inner">
-    <span class="close">&times;</span>
-    <h3>Compound<br>oefeningen</h3>
-    <p>Oefeningen die verschillende spiergroepen tegelijk aanspreken. De Bench Press is hier een voorbeeld van. Deze target zowel de borst, als triceps en schouders.</p>
-    <p>Het tegengestelde zijn isolatie-oefeningen, waarbij je slechts één spiergroep target per oefening. </p>
-    <p>Compound oefeningen zijn aangeduid met (C).</p>
-  </div>
-
-</div>
-</div>
 
       <ul class="oefeningen-lijst">
 
-        <a href="abs/overzicht.html"><li>
-          <img src="../public/afbeeldingen/Abs-oef.png">
-          <h3>Buik (Abs)</h3>
-          <img id="forward-btn" src="../public/afbeeldingen/arrow_black_forward.png">
+        <a v-for="item in oefeningen_links" :href="item.url">
+          <li>
+            <img :src="item.img">
+            <h3> {{ item.spiergroep }}</h3>
+            <img :id="next_btn_id" :src="next_btn_img">
           </li>
-          </a>
+        </a>
+      </ul>
+    </main>
 
-          <a href="benen/overzicht.html"><li>
-            <img src="../public/afbeeldingen/Benen-oef.png">
-            <h3>Benen</h3>
-            <img id="forward-btn" src="../public/afbeeldingen/arrow_black_forward.png">
-            </li>
-            </a>
+    <footer>
+    <footercomp
+    urlprefix="../"
+    displayoef="block"
+    displaybasis="none"
+    displayvoeding="none"
+    footeridoef="active-tab-footer"
+    footeridbasis=""
+    footeridvoeding=""
+    kleurbasis="black"
+    kleuroef="red"
+    kleurvoeding="black">
+  </footercomp>
+    </footer>
 
-        <a href="biceps/overzicht.html"><li>
-          <img src="../public/afbeeldingen/Biceps-oef.png">
-          <h3>Biceps</h3>
-          <img id="forward-btn" src="../public/afbeeldingen/arrow_black_forward.png">
-          </li>
-          </a>
-
-          <a href="borst/overzicht.html"><li>
-            <img src="../public/afbeeldingen/Chest-oef.png">
-            <h3>Borst (Chest)</h3>
-            <img id="forward-btn" src="../public/afbeeldingen/arrow_black_forward.png">
-            </li>
-            </a>
-
-            <a href="rug/overzicht.html"><li>
-              <img src="../public/afbeeldingen/Rug-oef.png">
-              <h3>Rug</h3>
-              <img id="forward-btn" src="../public/afbeeldingen/arrow_black_forward.png">
-              </li>
-              </a>
-
-            <a href="schouders/overzicht.html"><li>
-              <img src="../public/afbeeldingen/Shoulders-oef.png">
-              <h3>Schouders</h3>
-              <img id="forward-btn" src="../public/afbeeldingen/arrow_black_forward.png">
-              </li>
-              </a>
-
-              <a href="triceps/overzicht.html"><li>
-                <img src="../public/afbeeldingen/Triceps-oef.png">
-                <h3>Triceps</h3>
-                <img id="forward-btn" src="../public/afbeeldingen/arrow_black_forward.png">
-                </li>
-                </a>
-        </ul>
-  </main>
-
-  <footer id="footer-rood">
-    <ul class="footer-nav">
-      <li>
-        <div>
-          <a href="../basis/basis_start.html"><img src="../public/afbeeldingen/basis-black.png"></a>
-        </div>
-      </li>
-      <li id="active-tab-footer">
-        <div>
-          <a href="oefeningen_start.html"><img src="../public/afbeeldingen/oefeningen-red.png"></a>
-        <p style="color: #eb4d4b;">Oefeningen</p>
-      </div>
-    </li>
-      <li>
-        <div>
-          <a href="../voeding/voeding_start.html"><img src="../public/afbeeldingen/voeding-black.png"></a>
-        </div>
-      </li>
-    </ul>
-  </footer>
+  </div>
 
   <!--Importeren scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="../javascript/vue.js"></script>
 
   <script src="../javascript/index.js"></script>
   <script src="../javascript/pop-up.js"></script>
