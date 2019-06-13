@@ -186,6 +186,10 @@ Vue.component('oefeningenborst', {
   data: function() {
     return {
     oefeningenborstarray: [
+      {
+        naam: 'Incline dumbbell press (C)',
+        url: 'incline_dumbbell_press.html'
+      },
     {
       naam: 'Bench press (C)',
       url: '#'
@@ -193,10 +197,6 @@ Vue.component('oefeningenborst', {
     {
       naam: 'Dumbbell press (C)',
       url: '#'
-    },
-    {
-      naam: 'Incline dumbbell press (C)',
-      url: 'incline_dumbbell_press.html'
     },
     {
       naam: 'Cable flyes',
@@ -232,7 +232,7 @@ Vue.component('oefeningenbiceps', {
     },
     {
       naam: 'Alternating curl',
-      url: 'dumbbell_press.html'
+      url: '#'
     },
     {
       naam: 'Concentration curl',
