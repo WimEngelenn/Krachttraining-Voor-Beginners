@@ -525,10 +525,14 @@ Pagina voedingsmiddelen
 
   .collapse {
     .collapse-content {
-      padding: 20px;
+      padding: 20px; 
 
       p {
         padding-bottom: 20px;
+      }
+
+      h3 {
+        margin-bottom: 20px;
       }
     }
   }

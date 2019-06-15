@@ -447,6 +447,8 @@ Pagina voedingsmiddelen
   padding: 20px; }
   .voeding_extra .collapse .collapse-content p {
     padding-bottom: 20px; }
+  .voeding_extra .collapse .collapse-content h3 {
+    margin-bottom: 20px; }
 
 .collapse li {
   padding: 5px 0; }
